@@ -1,7 +1,7 @@
 import React from "react";
 
 export default function PersonalInfo(props) {
-  const { handleChange, handleSubmit, formData } = props;
+  const { formData } = props;
   return (
     <main className="info">
       <form onSubmit={props.handleSubmit} className="form">
