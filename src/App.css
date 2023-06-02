@@ -1,38 +1,256 @@
-.App {
+.header--head {
+  background-color: #1e90ff;
+  color: #fff;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.3rem;
+  font-weight: bold;
   text-align: center;
+  padding: 10px 0;
+}
+.info {
+  max-width: 700px;
+  margin: 0 auto;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.form {
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: calc(50% - 0.5rem);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-input,
+.form-textarea {
+  border: none;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #1e90ff;
+}
+
+.form-submit {
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: #0070c9;
+}
+.display-container {
+  max-width: 800px;
+  margin: auto;
+  border: 1px solid black;
+  box-shadow: 0 0 5px #ccc;
+  border-radius: 4px;
+  padding: 20px;
+  margin: 20px;
+}
+
+.display-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.display-section {
+  margin-bottom: 40px;
+}
+
+.display-section h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.display-section p {
+  font-size: 1.2rem;
+  margin-bottom: 5px;
+}
+
+.display-section ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.display-section li {
+  margin-bottom: 5px;
+}
+
+.display-section li span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.display-section hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+.display-container {
+  max-width: 800px;
+  margin: auto;
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+  color: #333;
+  background-color: whitesmoke;
+}
+
+/* Name and contact */
+.name-container {
+  margin-bottom: 20px;
+}
+
+.name-container h1 {
+  font-size: 2.5rem;
+  margin: 0;
+}
+
+.name-container h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.contact-container p {
+  margin: 0;
+  margin-bottom: 5px;
+  line-height: 1.5;
+}
+
+/* About me */
+.about-me-container {
+  margin-bottom: 40px;
+}
+
+.about-me-container h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+/* Skills */
+.skills-container {
+  margin-bottom: 40px;
+}
+
+.skills-container h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.skills ul {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.skills li {
+  margin-bottom: 5px;
+}
+
+/* Education */
+.education-container {
+  margin-bottom: 40px;
+}
+
+.education-container h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.education-container p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+/* Work experience */
+.work-experience-container {
+  margin-bottom: 40px;
+}
+
+.work-experience-container h3 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+}
+
+.work-experience-container p {
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+
+.form-input,
+.form-textarea {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  width: 100%;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  box-shadow: 0 0 0 2px #1e90ff;
+  border-color: #1e90ff;
+}
+
+.form-submit {
+  background-color: #1e90ff;
+  border: none;
+  border-radius: 5px;
+  color: #ffffff;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-submit:hover {
+  background-color: #0070c9;
+}
+.titles {
+  color: #2a8ff4;
+}
+.body-1 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
 }
